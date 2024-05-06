@@ -151,6 +151,6 @@ $(document).ready(function() {
 
 
 //prevent right click on website
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 
