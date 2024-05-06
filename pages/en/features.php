@@ -18,7 +18,7 @@
     <nav class="">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo d-flex align-items-center">
-        <a href="/ar"><img  src="../../assets/images/logo.svg"  alt="logo"></a>
+        <a href="/en"><img  src="../../assets/images/logo.svg"  alt="logo"></a>
         </div>
         <div class="navbar">
         
@@ -288,8 +288,6 @@
  </footer>
  <!-- End Footer -->
 
-  <script src="../../assets/js/jquery-3.7.1.min.js"></script>
-  <script src="../../assets/js/owl.carousel.min.js"></script>
   <script src="../../assets/js/aos.js"></script>
   <script src="../../assets/js/main.js"></script>
   <script>
@@ -299,26 +297,26 @@
     once: false
   });
  </script>
-  <script>
-      window._2chatConfig = {
-      phoneNumber: '+966500789456',
-      accountName: `مرحبا`,
-      statusMessage: `عادةً ما نقوم بالرد  خلال ساعة واحدة`,
-      chatMessage: `كيف يمكننا مساعدتك؟`,
-      placeholder: 'اكتب رسالتك'+"...",
-      position: 'left',
-      colorScheme: 'automatic',
-      showNotification: false,
-    };
+    <script>
+    window._2chatConfig = {
+    phoneNumber: '+213670663063',
+    accountName: `Welcome`,
+    statusMessage: `We usually respond within 1 hour`,
+    chatMessage: `How can we help you?`,
+    placeholder: `Write your message`+"...",
+    position: 'left',
+    colorScheme: 'automatic',
+    showNotification: false,
+  };
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://widgets.2chat.io/index.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', '_2chat'));
-  </script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://widgets.2chat.io/index.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', '_2chat'));
+</script>
 
 
 </body>

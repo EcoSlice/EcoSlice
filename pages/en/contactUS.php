@@ -271,7 +271,7 @@
     <script src="../../assets/js/jquery-3.7.1.min.js"></script>
     <script src="../../assets/js/aos.js"></script>
     <script src="../../assets/js/email.min.js"></script>
-    <script src="../../assets/js/sendingEmails_ar.js"></script>
+    <script src="../../assets/js/sendingEmails_en.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script>
        
@@ -280,13 +280,13 @@
       once: false
     });
    </script>
-   <script>
+    <script>
     window._2chatConfig = {
-    phoneNumber: '+966500789456',
-    accountName: `مرحبا`,
-    statusMessage: `عادةً ما نقوم بالرد  خلال ساعة واحدة`,
-    chatMessage: `كيف يمكننا مساعدتك؟`,
-    placeholder: 'اكتب رسالتك'+"...",
+    phoneNumber: '+213670663063',
+    accountName: `Welcome`,
+    statusMessage: `We usually respond within 1 hour`,
+    chatMessage: `How can we help you?`,
+    placeholder: `Write your message`+"...",
     position: 'left',
     colorScheme: 'automatic',
     showNotification: false,

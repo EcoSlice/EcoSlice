@@ -98,6 +98,24 @@
       footer .links ul li:hover::before{
         right: -5px;
     }
+    /* Whatsapp chat */
+    .Y6Q2HQZdOuLjh9WpiAxW{
+        text-align: start;
+    }
+    .CqtuywKJqt5882p3R_tC{
+        text-align: start;
+        display: flex;
+        justify-content: end;
+    }
+    .yXr7xbLcGPV0eEMdZnhe{
+        width: 70%;
+    }
+    .Ix8P2ESLEQrVKaoStOis{
+        direction: rtl;;
+    }
+    .dfGInLJtjHEgWq2BNr_A{
+        display: none;
+    }
     
 
   

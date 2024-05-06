@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إيكوسليس | الخصائص</title>
-    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/aos.css">
     <link rel="stylesheet" href="../../assets/css/main_style.css">
@@ -98,6 +97,24 @@
     }
       footer .links ul li:hover::before{
         right: -5px;
+    }
+          /* Whatsapp chat */
+    .Y6Q2HQZdOuLjh9WpiAxW{
+        text-align: start;
+    }
+    .CqtuywKJqt5882p3R_tC{
+        text-align: start;
+        display: flex;
+        justify-content: end;
+    }
+    .yXr7xbLcGPV0eEMdZnhe{
+        width: 70%;
+    }
+    .Ix8P2ESLEQrVKaoStOis{
+        direction: rtl;;
+    }
+    .dfGInLJtjHEgWq2BNr_A{
+        display: none;
     }
     
 
@@ -404,8 +421,6 @@
 
 
     
-    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
-    <script src="../../assets/js/owl.carousel.min.js"></script>
     <script src="../../assets/js/aos.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script>

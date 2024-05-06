@@ -63,7 +63,8 @@ header#header{
     transition: all .4s ease-in-out;
     
 }
-html[lang="en"] .features .card{
+html[lang="en"] .features .card,
+html[lang="fr"] .features .card{
     min-height: 630px;
 
     
