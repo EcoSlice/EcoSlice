@@ -1,5 +1,6 @@
 
 RewriteEngine On
+
 RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.mp4|\.ttf)$
 RewriteRule (.*) index.php [QSA,L]
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|webp|mp4|ttf)$">
