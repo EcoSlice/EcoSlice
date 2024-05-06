@@ -209,7 +209,7 @@
     <div class="row d-flex align-items-center ">
       <div class="col-md-6 mb-3 text-center text-md-start" data-aos="fade-left">
         <div class="content">
-          <h2>Téléchargez <br>l'application maintenant!</h2>
+          <h2>Téléchargez l'application maintenant!</h2>
 
           <div class="download-links d-flex align-items-center justify-content-center justify-content-md-start gap-3 pt-4">
             <div>
