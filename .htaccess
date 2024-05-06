@@ -1,7 +1,7 @@
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|webp)$">
-    Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
 
 RewriteEngine On
-RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf)$
-RewriteRule (.*) routes.php [QSA,L]
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.mp4|\.ttf)$
+RewriteRule (.*) index.php [QSA,L]
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|webp|mp4|ttf)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
