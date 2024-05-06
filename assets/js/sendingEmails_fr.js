@@ -100,6 +100,7 @@ submit_button.addEventListener("click",(e)=>{
              if(date-localStorage.getItem("lastTimeSendingMessage")>600000){
                 
                 sendEmail();
+                saveDataToGoogleSheet();
                 localStorage.setItem("lastTimeSendingMessage",date);
 
                 
@@ -124,6 +125,7 @@ submit_button.addEventListener("click",(e)=>{
         else{
           
             sendEmail();
+            saveDataToGoogleSheet();
           
             localStorage.setItem("lastTimeSendingMessage",date);
 
@@ -156,6 +158,42 @@ function sendEmail(){
 
     emailjs.send(serviceID,templateID,params)
     .then(function() {
+       
+    }, function(error) {
+      
+    });
+
+
+}
+
+function saveDataToGoogleSheet(){
+    // Define the URL for the API request
+    const url = 'https://sheetdb.io/api/v1/ydo4g75r4o8x6';
+
+    // Define the API key or access token for authentication
+    const accessToken = 'emiox2dkqag0w3fjtp86rmrl4cqun1ut8f57anvv'; 
+
+
+    // Format the data as required by the API
+    const requestBody = {
+    Name:Name.value,
+    Email:Email.value,
+    Phone:Phone.value,
+    Message:Message.value}
+
+
+    // Make the API request
+    fetch(url, {
+    method: 'POST',
+
+    headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'Content-Type': 'application/json'
+   },
+    body: JSON.stringify(requestBody)
+    })
+    .then(response => response.json())
+    .then(data => {
         alertDiv.classList.add("success","active");
         alertMessage.innerHTML=`<img src="../../assets/images/success.webp" loading="lazy" alt=""><span >Votre message a bien été envoyé</span>`;
         submit_button.disabled = false;
@@ -169,7 +207,8 @@ function sendEmail(){
 
 
         },5000);
-    }, function(error) {
+    })
+    .catch(error => {
         alertDiv.classList.add("error","active")
         alertMessage.innerHTML=`<img src="../../assets/images/error.webp" loading="lazy" alt=""><span >Le message n'a pas pu être envoyé</span>`;
         interval= setTimeout(()=>{
@@ -178,11 +217,12 @@ function sendEmail(){
 
 
         },5000);
+
+
+
     });
 
-
 }
-
 //close alert message when click on close btn
 closeAlertMessageButton.addEventListener("click",function(){
     alertDiv.classList.remove("active","error","success")
